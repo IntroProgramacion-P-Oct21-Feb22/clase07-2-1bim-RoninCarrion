@@ -17,7 +17,7 @@ public class Ejemplo02 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
-        String cadenaFinal = "";
+        String cadenaFinal = " ";
         double nota;
         boolean bandera = true;
         String salida;
@@ -30,7 +30,7 @@ public class Ejemplo02 {
             System.out.println("Ingrese (s) si desea salir del ciclo ");
             salida = entrada.nextLine();
 
-            if (salida.equals("s")) {
+            if (salida.equals("s") || salida.equals("si")) {
                 bandera = false;
             }
 

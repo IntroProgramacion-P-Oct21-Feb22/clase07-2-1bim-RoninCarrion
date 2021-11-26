@@ -27,7 +27,7 @@ public class Ejemplo08 {
         int numerador = 1;
         int denominador = 1;
         String signo;
-        String cadena = "";
+        String cadena = " ";
 
         do {
             // para manejar el signo asociado 
@@ -37,13 +37,13 @@ public class Ejemplo08 {
                 signo = "-";
             }
             
-            cadena = String.format("%s%s%d/%d ", 
+            cadena = String.format("%s%s%d/%d\n ", 
                     cadena,
                     signo,
                     numerador, 
                     denominador);
             denominador = denominador + 1;
-
+            numerador = numerador + 1; 
         } while (denominador <= limite);
 
         System.out.println(cadena);

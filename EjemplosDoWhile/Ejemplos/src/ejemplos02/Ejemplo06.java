@@ -31,14 +31,16 @@ public class Ejemplo06 {
         int tabla;
         int operacion;
         int contador = 1;
+        int limite;
         System.out.println("Ingrese la tabla a generar");
         tabla = entrada.nextInt();
-
+        System.out.println("Ingresar el límite");
+        limite = entrada.nextInt();
         do {
             operacion = tabla * contador;
             System.out.printf("%d x %d = %d\n", tabla, contador, operacion);
             contador = contador + 1;
-        } while (contador <= 10);
+        } while (contador <= limite);
 
     }
 }
